@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #444;
+    color: white;
+}
+
+p {
+    font-size: .6rem;
+}
+
+img {
+    width: 5.2rem;
+}
+
+header .container-fluid {
+    background-color: #888;
+    height: 4.5rem;
+    color: black;
+}
+
+.container-m-1 .row,
+.container {
+    width: 40rem;
+    height: 3rem;
+    /* font-size: 1.5rem; */
+    /* padding-top: 1.5rem; */
+}
+
+/* .container-m .row {
+    height: 7rem;
+} */
+
+.left {
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+
+.col .p-2 {
+    background-color: #888;
+}
+
+/* 
+  ##Cihaz = Masaüstü
+  ##Ekran = 1281px 'den yüksek çözünürlükler için
+*/
+
+@media screen and (min-width: 1281px) {
+    html {
+        font-size: 26px;
+    }
+}
+
+/* 
+    ##Cihaz = Laptoplar, Masaüstü
+    ##Ekran = 1025px to 1280px Arası Ekranlar
+  */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* 
+    ##Cihaz = Tabletler, Ipad (portrait/dikey modda)
+    ##Ekran = 768px to 1024px Arası Ekranlar
+  */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* 
+    ##Cihaz = Tabletler, Ipad (landscape/yatay modda)
+    ##Ekran = 768px to 1024px Arası Ekranlar
+  */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* 
+    ##Cihaz = Düşük Çözünürlüklü Tablet ve Mobil Ekranlar (Landscape / Yatay Modda)
+    ##Ekran = 481px to 767px Arası Ekranlar
+  */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+
+    header .logo {
+        background-color: #888;
+        padding-bottom: 1rem;
+    }
+
+    header .euro {
+        background-color: #777;
+
+    }
+    header .time {
+        background-color: #666;
+    }
+
+    .exchange {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and  (max-width: 480) {
+    html {
+        font-size: 8px;
+    }
+
+    header .logo {
+        background-color: #888;
+        padding-bottom: 1rem;
+    }
+
+    header .euro {
+        background-color: #777;
+
+    }
+    header .time {
+        background-color: #666;
+    }
+
+    .exchange {
+        margin-top: 5rem;
+    }
+}
